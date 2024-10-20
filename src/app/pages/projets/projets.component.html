@@ -1,0 +1,93 @@
+
+
+<section id="projets" class="bg-gray-100 border-b-8 border-t-8 py-12">
+  <div class="container mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Projets (2/3 de l'espace avec marge et bordure alignée) -->
+      <div class="md:col-span-2 border-b-8 md:border-b-0 md:border-r-8 ml-2 pr-4">
+        <h2 class="text-3xl font-bold mb-8">Mes Projets</h2>
+
+        <!-- Projet 1 -->
+        <div class="relative shadow-lg rounded-lg overflow-hidden mb-8 project-link opacity-0 animate-slideUp project-delay-1">
+          <a [routerLink]="['/projet1']" class="block"> <!-- Lien vers la page du projet 1 -->
+            <img src="assets/casino_table_dice.webp.webp" class="w-full h-64 object-cover">
+            
+            <!-- Gradient overlay -->
+            <div class="absolute inset-0 bg-gradient-to-r from-gray-800 via-transparent to-transparent opacity-70"></div>
+            
+            <!-- Titre avec effet de transition au survol, centré -->
+            <div class="project-link__title">
+              <!-- Titre par défaut -->
+              <span class="project-link__title_default">Jeu de dés</span>
+              <!-- Titre qui apparaît au survol -->
+              <span class="project-link__title_hover">Jeu de dés</span>
+            </div>
+
+            <!-- Description bouton flouté -->
+            <div class="absolute top-4 right-4 bg-gray-700 bg-opacity-90 text-white px-4 py-2 rounded-full">
+              Projet en cours de formation
+            </div>
+          </a>
+        </div>
+
+        <!-- Projet 2 -->
+        <div class="relative shadow-lg rounded-lg overflow-hidden mb-8 project-link opacity-0 animate-slideUp project-delay-2">
+          <a [routerLink]="['/projet2']" class="block"> <!-- Lien vers la page du projet 2-->
+            <img src="assets/zoo.webp.webp" class="w-full h-64 object-cover">
+            
+            <!-- Gradient overlay -->
+            <div class="absolute inset-0 bg-gradient-to-r from-gray-800 via-transparent to-transparent opacity-90"></div>
+            
+            <!-- Titre avec effet de transition au survol, centré -->
+            <div class="project-link__title">
+              <!-- Titre par défaut -->
+              <span class="project-link__title_default">Zoo Arcadia</span>
+              <!-- Titre qui apparaît au survol -->
+              <span class="project-link__title_hover">Zoo Arcadia</span>
+            </div>
+
+            <!-- Description bouton flouté -->
+            <div class="absolute top-4 right-4 bg-gray-700 bg-opacity-90 text-white px-4 py-2 rounded-full">
+              Projet de fin de formation
+            </div>
+          </a>
+        </div>
+
+        <!-- Projet 3 -->
+        <div class="relative shadow-lg rounded-lg overflow-hidden mb-8 project-link opacity-0 animate-slideUp project-delay-3">
+          <a [routerLink]="['/projet3']" class="block"> <!-- Lien vers la page du projet 1 -->
+            <img src="assets/gestion_de_stock.webp.jpg" class="w-full h-64 object-cover">
+            
+            <!-- Gradient overlay -->
+            <div class="absolute inset-0 bg-gradient-to-r from-gray-800 via-transparent to-transparent opacity-90"></div>
+            
+            <!-- Titre avec effet de transition au survol, centré -->
+            <div class="project-link__title">
+              <!-- Titre par défaut -->
+              <span class="project-link__title_default">Gestion de stock</span>
+              <!-- Titre qui apparaît au survol -->
+              <span class="project-link__title_hover">Gestion de stock</span>
+            </div>
+
+            <!-- Description bouton flouté -->
+            <div class="absolute top-4 right-4 bg-gray-700 bg-opacity-90 text-white px-4 py-2 rounded-full">
+              Projet personnel
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Contact (1/3 de l'espace à droite, aligné avec "Mes Réseaux") -->
+      <div class="flex flex-col items-start ml-2">
+        <h2 class="text-3xl font-bold mb-4">Contactez-moi</h2>
+        <!-- Bouton pour envoyer un email -->
+        <a href="mailto:thomas.berbigier@gmail.com" class="inline-flex items-center px-6 py-3 border border-gray-700 text-gray-700 rounded-full hover:bg-gray-700 hover:text-white transition duration-300">
+          <span class="font-semibold">Envoyer un email</span>
+          <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 19L19 5M5 5h14v14"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

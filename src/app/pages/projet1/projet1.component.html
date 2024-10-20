@@ -1,0 +1,192 @@
+<section class="container mx-auto py-12">
+  <div class="border-r-8 border-l-8">
+    <!-- Projet 1 -->
+    <div class="relative shadow-lg rounded-lg overflow-hidden mb-8 mx-auto" style="width: 80%;">
+      <!-- Image sans lien et sans animation -->
+      <img src="assets/casino_table_dice.webp.webp" class="w-full h-64 object-cover">
+      
+      <!-- Gradient overlay -->
+      <div class="absolute inset-0 bg-gradient-to-r from-gray-800 via-transparent to-transparent opacity-70"></div>
+      
+      <!-- Titre centré sans effet de transition -->
+      <div class="project-link__title absolute left-4 top-1/2 transform -translate-y-1/2 text-white text-4xl font-extrabold uppercase">
+        <span class="project-link__title_default">Jeu de dés</span>
+      </div>
+
+      <!-- Description bouton flouté -->
+      <div class="absolute top-4 right-4 bg-gray-700 bg-opacity-90 text-white px-4 py-2 rounded-full">
+        Projet en cours de formation
+      </div>
+    </div>
+
+    <div class="container mx-auto">
+      <!-- Ajuster la grille à deux colonnes dès les petits écrans -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pl-4">
+        <!-- Colonne Détails -->
+        <div class="md:col-span-2 border-b-8 md:border-b-0 md:border-r-8">
+          <h1 class="text-3xl font-bold mb-8">Détails</h1>
+          <p class="text-lg mb-4">L'application est un jeu de dés à deux joueurs, les règles sont simples, le premier arrivé à 100 points a gagné !</p>
+          <a href="https://thomasberbigier.github.io/ProjetJeuStudi/" class="inline-flex items-center px-6 py-3 border border-gray-700 text-gray-700 rounded-full hover:bg-gray-700 hover:text-white transition duration-300  mb-4">
+            <span class="font-semibold">Visiter le site</span>
+            <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 19L19 5M5 5h14v14"></path>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Stack -->
+        <div class="flex flex-col">
+          <h3 class="text-3xl font-bold mb-8">Stack</h3>
+          <div class="grid grid-cols-3 gap-4 justify-center">
+            <div class="text-center">
+              <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML5 icon" class="w-20 mx-auto">
+              <p class="mt-2">HTML5</p>
+            </div>
+            <div class="text-center">
+              <img src="https://cdn.simpleicons.org/css3/1572B6" alt="CSS3 icon" class="w-20 mx-auto">
+              <p class="mt-2">CSS3</p>
+            </div>
+            <div class="text-center">
+              <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript icon" class="w-20 mx-auto">
+              <p class="mt-2">JavaScript</p>
+            </div>
+            <div class="text-center">
+              <img src="https://cdn.simpleicons.org/bootstrap/7952B3" alt="Bootstrap icon" class="w-20 mx-auto">
+              <p class="mt-2">Bootstrap</p>
+            </div>
+            <div class="text-center">
+              <img src="https://cdn.simpleicons.org/github" alt="GitHub icon" class="w-20 mx-auto">
+              <p class="mt-2">GitHub</p>
+            </div>
+            <div class="text-center">
+              <img src="https://cdn.simpleicons.org/figma" alt="Figma icon" class="w-20 mx-auto">
+              <p class="mt-2">Figma</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mx-auto">
+      <div class="grid grid-cols-1 gap-8 pl-4 mt-8">
+        <div class="border-t-8 mr-8 ml-4"></div>
+        
+        <!-- Contexte -->
+        <div class="mr-12">
+          <h3 class="text-3xl font-bold mb-8">Contexte</h3>
+          <p class="text-lg">Durant mon année de formation de Graduate, une évaluation d'entraînement m'a été soumise dans le cadre du module <strong>"Dynamiser vos sites web avec Javascript"</strong>. <br> Cette épreuve avait pour objectif de tester mes compétences en développement web, plus particulièrement sur la réalisation d'une interface utilisateur dynamique. 
+          <br>L'évaluation portait sur des situations professionnelles concrètes, et visait à aborder les compétences suivantes selon le référentiel de certification :</p>
+          <ul class="list-disc list-inside mt-4 mb-4 text-lg">
+            <li>Réaliser une interface utilisateur web statique et adaptable</li>
+            <li>Développer une interface utilisateur web dynamique</li>
+          </ul>
+          <p class="text-lg">Le livrable attendu était la création d'un petit jeu sur navigateur web à l’aide du <strong>DOM</strong>.</p>
+        </div>
+        
+        <div class="border-t-8 mr-8 ml-4"></div>
+        <!-- Projet -->
+        <div class="mr-12">
+          <h3 class="text-3xl font-bold mb-8">Projet</h3>
+          <p class="text-lg">L'objectif de ce projet était de réaliser un jeu de dés fonctionnel pour deux joueurs, avec une interface claire et conforme à la maquette fournie.<br> Plusieurs fonctionnalités étaient requises pour la partie front-end :</p>
+          <ul class="list-disc list-inside mt-4 mb-4 text-lg">
+            <li>La possibilité de créer une nouvelle partie</li>
+            <li>La gestion du score courant pour chaque joueur</li>
+            <li>La possibilité de lancer le dé</li>
+            <li>Un mode multijoueur avec deux joueurs</li>
+          </ul>
+          <p class="text-lg">Le jeu devait respecter les règles suivantes :</p>
+          <ul class="list-disc list-inside mt-4 mb-4 text-lg">
+            <li>Chaque joueur possède un score temporaire (<strong>ROUND</strong>) et un score global (<strong>GLOBAL</strong>).</li>
+            <li>À chaque tour, le joueur peut lancer un dé autant de fois qu'il le souhaite, et le résultat du lancer est ajouté à son score <strong>ROUND</strong>.</li>
+            <li>Le joueur peut décider de "Hold" (retenir ses points), ce qui transfère les points du <strong>ROUND</strong> vers le <strong>GLOBAL</strong> et passe le tour à l'autre joueur.</li>
+            <li>Si le joueur obtient un 1 lors du lancer de dé, son <strong>ROUND</strong> est perdu et son tour se termine.</li>
+            <li>Le premier joueur à atteindre 100 points dans son score <strong>GLOBAL</strong> remporte la partie.</li>
+          </ul>
+          <p class="text-lg">Le projet devait être structuré et fonctionnel, et plusieurs contraintes techniques étaient imposées, comme l'utilisation de la police <strong>Lato</strong> et d'un <strong>Framework CSS adaptatif</strong> de mon choix.</p>
+        </div>
+
+        <div class="border-t-8 mr-8 ml-4"></div>
+        <!-- Défis Techniques -->
+        <div class="mr-12">
+          <h3 class="text-3xl font-bold mb-8">Défis Techniques</h3>
+          <p class="text-lg">J'ai réalisé le maquettage afin de me familiariser avec l'outil Figma. <br> L'un des principaux défis de ce projet a été de gérer la logique du score et le transfert entre le score temporaire et global, tout en rendant le jeu fluide et interactif pour les utilisateurs. Pour cela, j'ai implémenté une gestion d'événements JavaScript efficace et optimisé les interactions DOM. <p>
+          <img src="assets/MaquetteBureautiqueJeuDes.png" class="w-full md:w-2/3 mx-auto">
+        </div>
+        
+
+        <div class="border-t-8 mr-8 ml-4"></div>
+        <!-- Conclusion -->
+        <div class="mr-12">
+          <h3 class="text-3xl font-bold mb-8">Conclusion</h3>
+          <p class="text-lg">Ce projet m'a permis de renforcer mes compétences en développement d'interfaces dynamiques et en manipulation du DOM avec JavaScript. <br> La réalisation de ce jeu de dés m'a également appris à gérer efficacement les états et les événements utilisateur pour offrir une expérience fluide. <br> Vous pouvez tester le jeu ou accéder au coude source via les liens ci-dessous :</p>
+          <a href="https://thomasberbigier.github.io/ProjetJeuStudi/" class="inline-flex items-center px-6 py-3 border border-gray-700 text-gray-700 rounded-full hover:bg-gray-700 hover:text-white transition duration-300 mt-4">
+            <span class="font-semibold">Visiter le site</span>
+            <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 19L19 5M5 5h14v14"></path>
+            </svg>
+          </a>
+          <a href="https://github.com/ThomasBerbigier/ProjetJeuStudi" class="inline-flex items-center px-6 py-3 border border-gray-700 text-gray-700 rounded-full hover:bg-gray-700 hover:text-white transition duration-300 mt-4 ml-8">
+            <span class="font-semibold">Visiter le GitHub</span>
+            <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 19L19 5M5 5h14v14"></path>
+            </svg>
+          </a>
+        </div>
+
+        <div class="border-t-8 mr-8 ml-4"></div>
+        <!-- Section Autres Projets -->
+          <h2 class="text-3xl font-bold mb-4">Autres Projets</h2>
+
+          <!-- Grille à deux colonnes pour afficher les deux autres projets -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-4">
+            <!-- Projet 2 -->
+            <div class="relative shadow-lg rounded-lg overflow-hidden project-link opacity-0 animate-slideUp project-delay-1 mr-4">
+              <a [routerLink]="['/projet2']" class="block">
+                <img src="assets/zoo.webp.webp" class="w-full h-64 object-cover">
+                
+                <!-- Gradient overlay -->
+                <div class="absolute inset-0 bg-gradient-to-r from-gray-800 via-transparent to-transparent opacity-90"></div>
+                
+                <!-- Titre avec effet de transition au survol, centré -->
+                <div class="project-link__title">
+                  <!-- Titre par défaut -->
+                  <span class="project-link__title_default">Zoo Arcadia</span>
+                  <!-- Titre qui apparaît au survol -->
+                  <span class="project-link__title_hover">Zoo Arcadia</span>
+                </div>
+
+                <!-- Description bouton flouté -->
+                <div class="absolute top-4 right-4 bg-gray-700 bg-opacity-90 text-white px-4 py-2 rounded-full">
+                  Projet de fin de formation
+                </div>
+              </a>
+            </div>
+
+            <!-- Projet 3 -->
+            <div class="relative shadow-lg rounded-lg overflow-hidden project-link opacity-0 animate-slideUp project-delay-3 mr-4">
+              <a [routerLink]="['/projet3']" class="block">
+                <img src="assets/gestion_de_stock.webp.jpg" class="w-full h-64 object-cover">
+                
+                <!-- Gradient overlay -->
+                <div class="absolute inset-0 bg-gradient-to-r from-gray-800 via-transparent to-transparent opacity-90"></div>
+                
+                <!-- Titre avec effet de transition au survol, centré -->
+                <div class="project-link__title">
+                  <!-- Titre par défaut -->
+                  <span class="project-link__title_default">Gestion de stock</span>
+                  <!-- Titre qui apparaît au survol -->
+                  <span class="project-link__title_hover">Gestion de stock</span>
+                </div>
+
+                <!-- Description bouton flouté -->
+                <div class="absolute top-4 right-4 bg-gray-700 bg-opacity-90 text-white px-4 py-2 rounded-full">
+                  Projet personnel
+                </div>
+              </a>
+            </div>
+          </div>
+
+      </div>
+    </div>
+  </div>
+</section>

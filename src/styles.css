@@ -1,1 +1,90 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.project-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Alignement du texte à gauche */
+    height: 240px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.project-link img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-link__title {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 1rem; /* Aligner à gauche */
+    transform: translateY(-50%); /* Centrer verticalement */
+    max-height: 4rem;
+    overflow: hidden;
+    z-index: 1;
+    color: white;
+}
+
+.project-link__title span {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 3rem;
+    transition: transform 0.4s cubic-bezier(.83, 0, .17, 1), color 0.2s ease-in-out;
+    letter-spacing: -1px;
+}
+
+.project-link__title_default {
+    font-weight: 700;
+}
+
+.project-link__title_hover {
+    font-weight: 300;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+}
+
+.project-link:hover .project-link__title_default {
+    transform: translateY(-100%);
+}
+
+.project-link:hover .project-link__title_hover {
+    transform: translateY(0);
+}
+
+@media (max-width: 640px) { 
+    .project-link__title span {
+        font-size: 2.2rem;
+    }
+}
+
+.project-delay-1 {
+    animation-delay: 0.1s;
+}
+
+.project-delay-2 {
+    animation-delay: 0.3s;
+}
+
+.project-delay-3 {
+    animation-delay: 0.5s;
+}
+
+.reseaux-sociaux {
+    opacity: 0;
+    transform: translateX(100%); /* La section commence en dehors de l'écran à droite */
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  
+  .reseaux-sociaux.visible {
+    opacity: 1;
+    transform: translateX(0); /* La section apparaît à sa position normale */
+  }
+  
