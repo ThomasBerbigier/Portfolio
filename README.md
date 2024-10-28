@@ -1,4 +1,4 @@
-# Portfolio - Thomas Berbigier
+# 🌐 Portfolio - Thomas Berbigier
 
 ## Introduction
 
