@@ -1,27 +1,30 @@
-# BerbigierThomasPortfolio
+# 🌐 Portfolio - Thomas Berbigier
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.8.
+## Introduction
 
-## Development server
+Ce portfolio a été créé pour valoriser mes compétences et mettre en avant mes projets. 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Fonctionnalités
 
-## Code scaffolding
+- **Accueil** : Une présentation générale avec accès rapide aux projets.
+- **À propos** : Un aperçu de mon parcours, de mes compétences et de mes objectifs professionnels.
+- **Projets** : Un aperçu de mes réalisations avec détails sur chaque projet :
+  - **Projet 1** : Jeu de dés (HTML, CSS, JavaScript)
+  - **Projet 2** : Application de gestion de zoo (PHP, SQL et NoSQL)
+  - **Projet 3** : Gestion de stock pour entreprises (Java, Angular, Spring Boot, MariaDB)
+- **Navigation** : Un menu interactif facilitant la navigation fluide entre les différentes sections.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Technologies Utilisées
 
-## Build
+- ![Angular](https://img.shields.io/badge/Angular-DD0031?logo=angular&logoColor=white&style=for-the-badge) 
+- ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white&style=for-the-badge)
+- ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white&style=for-the-badge)
+- ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?logo=tailwindcss&logoColor=white&style=for-the-badge)
+- ![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white&style=for-the-badge)
+- ![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white&style=for-the-badge)
+- ![Netlify](https://img.shields.io/badge/Netlify-00C7B7?logo=netlify&logoColor=white&style=for-the-badge)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## Aperçu
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Explorez mon portfolio et découvrez mes projets sur [Netlify](https://thomasberbigier.netlify.app/).
